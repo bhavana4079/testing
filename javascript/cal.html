@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sum.css">
+    <script>
+           function digit()
+   {
+    let t1= Number(document.getElementById("t1").value);
+    let t2=Number(document.getElementById("t2").value);
+    if(t1=="")
+    {
+      alert("fill the frist box");
+    }
+    else if(t2=="")
+    {
+       alert("fil the secon box");
+    }
+    else
+    {
+      //  alert("fill the find box");
+       let sum=t1+t2;
+        document.getElementById("t3").value=sum;
+    }
+    
+   }
+     
+function multi()
+{
+let t1= Number(document.getElementById("t1").value);
+let t2=Number(document.getElementById("t2").value);
+if(t1==""||t2=="")
+{
+   alert("fill the box")
+}
+else
+{
+let multi=t1*t2;
+document.getElementById("t3").value=multi;
+}
+}
+function sub()
+{
+
+   if(validate()==true)
+   {
+   let t1= Number(document.getElementById("t1").value);
+   let t2=Number(document.getElementById("t2").value);
+   let sub=t1-t2;
+   document.getElementById("t3").value=sub;
+   }
+   else
+   {
+      alert("empty box");
+   }
+}
+
+function div()
+{
+   if(validate()==true)
+   {
+
+      let t1= Number(document.getElementById("t1").value);
+      let t2=Number(document.getElementById("t2").value); 
+      let div=t1/t2; 
+      document.getElementById("t3").value=div;
+   }
+   else 
+   {
+      alert("empty");   
+   }
+
+}
+function clearForm()
+{
+   document.getElementById("t1").value="";
+   document.getElementById("t2").value="";
+   document.getElementById("t3").value="";
+}
+function validate()
+{
+   let t1= Number(document.getElementById("t1").value);
+   let t2=Number(document.getElementById("t2").value);
+   if(t1=="")
+   {
+   //   alert("fill the frist box");
+   return false;
+   }
+   else if(t2=="")
+   {
+      // alert("fil the secon box");
+      return false;
+   }
+   else
+   {
+      return true;
+   }
+}
+
+    
+    </script>
+
+</head>
+<body>
+    <div>
+    <div class="text">
+        <input type="text" id="t1">
+    </div>
+    <div class="text">
+        <input type="text" id="t2">
+    </div>
+    <div class="text">
+        <input type="text" id="t3" readonly="readonly">
+    </div>
+    <input type="button" value="sum" onclick="digit()"/>
+    <input type="button" value="multi" onclick="multi()"/>
+    <input type="button" value="sub" onclick="sub()"/>
+    <input type="button" value="div" onclick="div()"/>
+    <input type="button" value="clear" onclick="clearForm()">
+   </div>
+</body>
+</html>

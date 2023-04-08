@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <style>
+         
+           
+           .nav ul li {
+    color: gray;
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+    padding-bottom: 18px;
+    padding-top: 14px;
+}
+        .nav ul
+        {
+            list-style: none;
+        }
+        .ab
+        {
+            color:#faa61a;
+            font-size: 35px;
+            margin-top: 20px;
+            float: left;
+        }
+        .hotenav ul
+        {
+           list-style: none;
+        }
+        .hotenav ul li
+        {
+            color:white;
+            padding: 12px;
+            margin: 0px 1px;
+            float: left;
+            line-height: 3px;
+            margin-top: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+            display: inline;
+            font-size: 16px;
+        }
+        .iconsect{
+            display: none;
+        }
+        .menuicon
+        {
+            display: none;
+        }
+        .box{
+            background: rgba(255,255,255,0.9);
+            width: 100%;
+            height: 400px;
+            position: absolute;
+          
+        }
+        .box1{
+            background: black;
+            width: 83%;
+            height: 39px;
+        }
+        .box2{
+           background: rgba(0,0,0,0.8);
+           width: 89%;
+           height: 402px;
+           position: absolute;
+           
+        }
+        .list
+        {   
+            float: left;
+            color: white;
+            padding: 8px;        }
+        .ico{
+            color: #faa61a;
+            position: absolute;
+           z-index: 99;
+          top: 15px;
+        }
+        .from
+        {
+            margin: 47px;
+        }
+        label
+        {
+            display: inline-block;
+          
+            margin-bottom: .5rem;
+        }
+        .city { 
+    width: 70%;
+    padding: 10px 20px;
+     }
+     .citys { 
+    width: 85%;
+    padding: 10px 20px;
+}
+        .map
+        {
+            position: absolute;
+         color: orange;
+         top: 6px;
+    left: 5px;
+        }
+        .btn
+        {
+        background-color: #faa61a;
+         color:white;
+         width: 92px;
+         height: 43px;
+         border: none;
+        }
+        .sub
+        {
+          padding: 20px;
+            float: left;
+            padding-left: 2px ;
+            width: 100%;
+        }
+        .plan{
+            padding: 43px 55px;
+          margin-top: 38px;
+         max-height: 400px;
+         min-height: 350px;
+          }
+          .plan h3
+          {
+            font-weight: bold;
+         font-size: 28px;
+           
+         margin-bottom: 15px;
+          }
+        .plan p
+        {
+            font-weight: bold;
+           font-size: 15px;
+         margin-bottom: 22px;
+        }
+        .btn1
+        {
+            color: white;
+    width: 179px;
+    height: 43px;
+    background: rgba(0,0,0,3.8);
+    border-color: white;
+        }
+        .pag
+        {
+            font-size: 35px;
+        margin-top: 12px;
+        /* float: left; */
+        color: white;
+         margin-left: 37px;}
+        .star
+        {
+            color:#faa61a;font-weight:900;margin:-8px;
+        }
+        .offers{
+            text-align: center;
+            margin-bottom: 40px;
+            -webkit-user-modify: read-write-plaintext-only;
+        }
+        .offers h2{
+            font-size: 36px;
+         font-weight: bold;
+         margin-bottom: 14px;
+        }
+        .mask 
+        {
+            list-style: none;
+    float: left;
+    width: 90%;
+    position: absolute;
+    bottom: 3px;
+    background:#000000c4;
+}
+.mask ul{
+    list-style: none;
+}
+.mask ul li
+{
+    color:white;
+    float: left;
+  
+}
+.mask1
+    {
+    width: 90%;
+    position: absolute;
+    bottom: -77px;
+    background:white;
+    height: 78px;
+}
+.fort
+{
+    padding: 8px;
+}
+.fort p{
+    color: #939598;
+}
+.fastar
+{
+    color:#faa61a;
+    text-align: center;
+
+}
+.fastar1
+{
+    color:white;
+}
+.maskicone
+{
+    text-align: center;
+
+}
+.maskicone ul li
+{
+    text-align: center;
+    float: left;
+
+}
+.ullist{
+    padding: 9px;
+}
+.ullist ul li{
+    padding: 9px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.textimg ul
+{
+   display:flex ;
+      justify-content:center
+
+}
+.textimg ul li
+{
+   text-align: center;
+   float: left;
+   margin-right: 13px;
+
+}
+.carousel-indicator li
+{
+width: 50px !important;;
+height: 50px !important;;
+border-radius: 50%;
+}
+.carousel-indicator.active
+{
+    border: 3px solid #faa61a;
+    width: 100px !important;
+    height: 100px !important;
+}
+.carousel-indicator li img
+{
+    width: 200px;
+}
+        
+               @media screen and (max-width: 600px) {
+    .container{
+                width:100%;
+            }
+        .col-xs-12
+        {
+            width:100%;
+            float: left;
+        }
+        .col-xs-6
+        {
+            width: 50%;
+        }
+        .iconsect{
+            display: block;
+            color: #faa61a  ;
+            margin-top:28px;
+            float: right;
+            margin-right:25px;
+            font-size: 20px;
+            
+        }
+        .hotenav {display:none;}
+             
+        .menuicon
+        {
+            display: block;
+            float: right;  
+            font-size: 22px;
+            margin-right:15px;
+            color: #212529;
+            margin-left: 11px;
+        }
+        .m1{
+            display: flex;
+            justify-content: center;
+        }
+         .box2
+        {
+            display:none;
+        }
+        .list span{
+            display: none;
+        }
+        .ico
+        {
+            display: inline;
+            display: block;
+        }
+        .nav ul li {
+            color:#939598;
+        float: left;
+       font-size: 14px;
+        margin-right: 20px;
+       padding-bottom: 11px;
+      padding-top: 7px;
+       } 
+       .pag
+        {
+            font-size: 22px;
+         margin-top: 16px;
+            float: left;
+        color: white;
+         margin-left: 16px;
+        }
+        .star
+        {
+            color:#faa61a;font-weight:900;margin:-8px;
+        }
+        .ab
+        {
+            color:#faa61a;
+            font-size:24px;
+            float: left;
+          margin-left: 17px;
+          margin-top: 15px;
+        }
+        .moblie{
+            padding: 15px;
+        }
+        .box{
+            background: rgba(255,255,255,0.9);
+            width: 100%;
+            height: 500px;
+            position: absolute;
+          
+        }
+        .sub
+        {
+         text-align: center;
+        }
+        .mask 
+        {
+            list-style: none;
+    float: left;
+    width: 90%;
+    position: absolute;
+    bottom: 3px;
+    background:#000000c4;
+}
+
+        
+    }
+           
+    
+    </style>
+</head>
+<body>
+
+    <div class="container-fuild" style="background: black; ">
+        <div class="container" >
+          <div class="col-md-6 col-xs-12 m1">
+              <div class="nav">
+                  <ul>
+                    <li> <i class="fa fa-map-marker"></i>
+                      29 Land St, Lorem City, CA</li>
+                           <li>
+                          <i class="fa fa-phone"></i>
+                          +00 123 4567
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+
+        
+                <div class="col-md-6 col-xs-12 m1">
+                    <div class="nav" style="float: right; ">
+                     <ul>
+                          <li>
+                           <i class="fa fa-lock"></i>
+                            Login
+                             </li>
+
+                            <li>
+                            <i class="fa fa-plus"></i>
+                           
+                            Sign Up
+                           </li >
+
+                           <li>|</li>
+
+                           <li>$
+                            <i class="fa fa-angle-down"></i>
+                          </li>
+
+                           <li>
+                           EN
+                           <i class="fa fa-angle-down"></i>
+                           </li>
+                      </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+        <div class="container-fuild" style="background-image: url('image/hotel-slider-1.jpg');height: 700px;">
+            <div class="container">
+            <div class="col-md-3 col-xs-6">
+                
+                 <i class="fa fa-plane ab" ></i>
+                <p class="pag"><span class="star">STAR</span> TRAVEL</p>
+           </div>
+           
+            <div class="col-md-9 col-xs-6" > 
+                 <div class="hotenav">
+                     <ul>  
+                          <li><b> HOME  </b><i class="fa fa-angle-down"></i></li>
+                         <li><b>FIGHT </b><i class="fa fa-angle-down"></i></li>
+                         <li> <b>HOTEL </b><i class="fa fa-angle-down"></i></li>
+                          <li> <b>TOUR </b><i class="fa fa-angle-down"></i></li>
+                          <li><b>CRUSIE </b><i class="fa fa-angle-down"></i></li>
+                          <li> <b>CAR </b><i class="fa fa-angle-down"></i></li>
+                          <li><b> FEARURE</b> <i class="fa fa-angle-down"></i></li>
+                          <li><b> PAGE </b><i class="fa fa-angle-down"></i></li>
+                          <li style="color:#faa61a"><i class="fa fa-search"></i></li>
+                     </ul>
+                 </div>
+
+                  <div class="iconsect">
+                        <i class="fa fa-search"></i> <i class="fa fa-navicon menuicon" ></i>
+                  </div>
+                  
+            </div> 
+        </div>
+
+        <div class="container">
+            <div class="moblie">
+             <div class="col-md-6 col-xs-12" style="position: relative; top:97px">
+                 <div class="box1">
+                    <ul class="nav nav-pills">
+                        <li class="active"><i class="fa fa-plane ico"></i><a data-toggle="pill" href="#home">FLIGHTS</a></li>
+                        <li><i class="fa fa-building ico"></i><a data-toggle="pill" href="#menu1">HOTEL</a></li>
+                        <li><i class="fa fa-suitcase ico" ></i><a data-toggle="pill" href="#menu2">TOURS</a></li>
+                        <li><i class="fa fa-ship ico" ></i><a data-toggle="pill" href="#menu3">CRUISE</a></li>
+                        <li><i class="fa fa-car ico" ></i><a data-toggle="pill" href="#menu4">CAR</a></li>
+                      </ul>
+                </div>
+                
+                   
+                
+
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                            <div class="box">
+                      
+
+<form>
+    <div class="from"> 
+   <div class="col-md-6 col-xs-12">
+      <label>FORM</label>
+      <div style="position: relative;">
+         <i class="fa fa-map-marker map"></i>
+         <input type="text" placeholder="city,country" class="city">
+      </div>
+       <BR>
+   
+       <label>CHECK IN</label>
+       <div style="position: relative;">
+         <i class="fa fa-calendar map"></i>
+         <input type="text" placeholder="city,country" class="city">
+      </div>
+    </div>
+   
+   
+   
+   <div class="col-md-6 col-xs-12">
+    
+      <label>TO</label>
+      <div style="position: relative;">
+        <i class="fa fa-map-marker map"></i>
+        <input type="text" placeholder="city,country" class="city">
+      </div>
+       <BR>
+      <label>CHECK OUT</label>
+       <div style="position: relative;">
+           <i class="fa fa-calendar map"></i>
+           <input type="text" placeholder="city,country" class="city">
+      </div>
+   </div>
+   <label>ADULTS</label>
+                                   <div style="position: relative;">
+                                      <input type="text" placeholder="01" class="citys">
+                                   </div>
+                        
+    
+                               <div class="sub">
+                                  <input type="submit" value="SEARCH" class="btn">
+                               </div>
+   </div>
+                              </form>
+   
+                      </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <div class="box">
+                      
+
+                            <form>
+                                <div class="from"> 
+                               <div class="col-md-6 col-xs-12">
+                                  <label>FORM</label>
+                                  <div style="position: relative;">
+                                     <i class="fa fa-map-marker map"></i>
+                                     <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                                   <BR>
+                               
+                                   <label>CHECK IN</label>
+                                   <div style="position: relative;">
+                                     <i class="fa fa-calendar map"></i>
+                                     <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                                </div>
+                               
+                               
+                               
+                               <div class="col-md-6 col-xs-12">
+                                
+                                  <label>TO</label>
+                                  <div style="position: relative;">
+                                    <i class="fa fa-map-marker map"></i>
+                                    <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                                   <BR>
+                                  <label>CHECK OUT</label>
+                                   <div style="position: relative;">
+                                       <i class="fa fa-calendar map"></i>
+                                       <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                               </div>
+                               <label>ADULTS</label>
+                                                               <div style="position: relative;">
+                                                                  <input type="text" placeholder="01" class="citys">
+                                                               </div>
+                                                    
+                                
+                                                           <div class="sub">
+                                                              <input type="submit" value="SEARCH" class="btn">
+                                                           </div>
+                               </div>
+                                                          </form>
+                               
+                                                  </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <div class="box">
+                      
+
+                            <form>
+                                <div class="from"> 
+                               <div class="col-md-6 col-xs-12">
+                                  <label>FORM</label>
+                                  <div style="position: relative;">
+                                     <i class="fa fa-map-marker map"></i>
+                                     <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                                   <BR>
+                               
+                                   <label>CHECK IN</label>
+                                   <div style="position: relative;">
+                                     <i class="fa fa-calendar map"></i>
+                                     <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                                </div>
+                               
+                               
+                               
+                               <div class="col-md-6 col-xs-12">
+                                
+                                  <label>TO</label>
+                                  <div style="position: relative;">
+                                    <i class="fa fa-map-marker map"></i>
+                                    <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                                   <BR>
+                                  <label>CHECK OUT</label>
+                                   <div style="position: relative;">
+                                       <i class="fa fa-calendar map"></i>
+                                       <input type="text" placeholder="city,country" class="city">
+                                  </div>
+                               </div>
+                               <label>ADULTS</label>
+                                                               <div style="position: relative;">
+                                                                  <input type="text" placeholder="01" class="citys">
+                                                               </div>
+                                                    
+                                
+                                                           <div class="sub">
+                                                              <input type="submit" value="SEARCH" class="btn">
+                                                           </div>
+                               </div>
+                                                          </form>
+                               
+                                                  </div>
+                    </div>
+                  </div>
+                        
+                   </div>
+                 </div>
+                </form>
+                <div class="col-md-6" style="position: relative; top:146px">
+                    <div class="box2">
+                      <div class="plan">
+                      <h2 style="color: #faa61a;">Find Your Perfect Plan</h2>
+                      <br>
+                      <p style="color: white;">
+                          Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper, imeam mnesarchum at, pro an eros perpetua ullamcorper.
+                      </p>
+                      <p style="color: white;">
+                          Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.
+                          </p>
+                          <div class="sub">
+                              <input type="submit" value="EXPLORE MORE" class="btn1">
+                           </div>
+                          </div>
+                   </div>
+                 </div>
+          </div>
+  </div>
+           </div> 
+           </div>
+        </div>
+   </div>
+
+
+   <div class="container-fuild" style="background-color: black; height :500px">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <h3 style="color:white;text-align: center; font-size: 52px;"><strong>Testimonial</strong></h3>
+            <div class="seprator"></div>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row" style="padding: 20px">
+                        <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                        <p class="testimonial_para" style="text-align: center; font-size: 21px;    color: darkgrey;
+                        ">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                                   
+
+                        <div style="margin:0px auto; text-align:center; ">
+                            <ul>
+                                <li><span><i class="fa fa-star fastar"></i></span>
+                                <span><i class="fa fa-star fastar"></i></span>
+                                <span><i class="fa fa-star fastar"></i></span>
+                                <span><i class="fa fa-star fastar"></i></span>
+                            <span><i class="fa fa-star fastar1"></i></span></li>
+                            </ul>                
+
+                        </div>
+
+                        <div style="margin:0px auto; text-align:center;color:darkgrey">
+                                <h1>JHON SMITH</h1>
+                            </div>
+                       
+                        <div class="row">
+                        <div class="col-sm-12">
+                           <div class="textimg" style="text-align: center; width: 100%; margin-right: 90px;">
+                            <ol class="carousel-indicators">
+                          <li data-target="myCarousel" data-slide-to="0" class="active"> <img src="image/client-2.jpg" style="border-radius: 90px; border: 4px solid #faa61a;"></li>
+                          <li data-target="myCarousel" data-slide-to="1" class="active"><img src="image/client-1.jpg"  style="border-radius: 90px; border: 4px solid #faa61a;"></li>
+                          <li data-target="myCarousel" data-slide-to="2" class="active"><img src="image/client-3.jpg" style="border-radius: 90px; border: 4px solid #faa61a;"></li>
+                           </ol>
+                           </div>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                   <div class="item">
+                       <div class="row" style="padding: 20px">
+                        <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                        <p class="testimonial_para" style="text-align: center; font-size: 21px;    color: darkgrey">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                        <div style="margin:0px auto; text-align:center; ">
+                            <ul>
+                                <li><span><i class="fa fa-star fastar"></i></span>
+                                <span><i class="fa fa-star fastar"></i></span>
+                                <span><i class="fa fa-star fastar"></i></span>
+                                <span><i class="fa fa-star fastar"></i></span>
+                            <span><i class="fa fa-star fastar1"></i></span></li>
+                            </ul>                
+
+                        </div>
+
+                        <div style="margin:0px auto; text-align:center;color:darkgrey">
+                                <h1>JHON SMITH</h1>
+                            </div>
+                       
+                        
+                        
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                        <div class="col-sm-2">
+                            <img src="image/client-1.jpg" class="img-responsive" style="width: 80px">
+                            </div>
+                            
+                                
+                    
+                        </div>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="controls testimonial_control pull-right">
+                    <a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic"
+                      data-slide="prev"></a>
+    
+                    <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic"
+                      data-slide="next"></a>
+                  </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <ul class="carousel-indicators">
+        <li><img src="image/client-2.jpg" style="border-radius: 90px; border: 4px solid #faa61a;"></li>
+        <li data-target="myCarousel" data-slide-to="1" class="active"><img src="image/client-1.jpg"  style="border-radius: 90px; border: 4px solid #faa61a;"></li>
+        <li data-target="myCarousel" data-slide-to="2" class="active"><img src="image/client-3.jpg" style="border-radius: 90px; border: 4px solid #faa61a;"></li>
+         </ul>
+    </div>
+
+   </body>
+</html>
